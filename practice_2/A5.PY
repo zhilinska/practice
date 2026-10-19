@@ -3,11 +3,10 @@ while x == 0: #цикл будет просить ввести данные, п�
     try:
         fnum = int(input("введиде число A: "))
         snum = int(input("введиде число B: "))
-        while snum == 0:
+        x = 1
+        if snum == 0:
             print('на ноль не делят')
-            fnum = int(input("введиде число A: "))
-            snum = int(input("введиде число B: "))
-        x = x + 1
+            x = 0
     except: #если пользователь введет неподходящий тип данных
         print('сюда бы число')
 if fnum % snum == 0:
